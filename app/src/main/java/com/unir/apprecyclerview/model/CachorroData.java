@@ -9,6 +9,27 @@ public class CachorroData {
         ArrayList<Cachorro> cachorros = new ArrayList<>();
 
         cachorros.add(new Cachorro(
+                "Shakira",
+                "SRD",
+                "Cão de pequeno porte conhecida por seu apetite, inteligência acima da média e coragem. Já colocou cachorro 3x maior que ela para correr.",
+                "https://raw.githubusercontent.com/CamilaFer26/Praticando-RecyclerView-PDM/refs/heads/main/docs/imgs/shakira.jpeg"
+        ));
+
+        cachorros.add(new Cachorro(
+                "Mel",
+                "SRD mais próxima de Pinscher",
+                "Cão de pequeno porte conhecida por seu instinto de caça, energia e curiosidade. Seu passa tempo favorito é seguir as pessoas e eventualmente fazer alguém tropeçar.",
+                "https://raw.githubusercontent.com/CamilaFer26/Praticando-RecyclerView-PDM/refs/heads/main/docs/imgs/mel.jpeg"
+        ));
+
+        cachorros.add(new Cachorro(
+                "Aruna (Pepino para os mais próximos)",
+                "SRD",
+                "Cão de porte MUITO pequeno, conhecida por gostar de dormir e latir para coisas desconhecidas (como portão que se move sozinho e vassouras em uso).",
+                "https://raw.githubusercontent.com/CamilaFer26/Praticando-RecyclerView-PDM/refs/heads/main/docs/imgs/aruna.jpeg"
+        ));
+
+        cachorros.add(new Cachorro(
                 "Max",
                 "Beagle",
                 "Cão de porte médio conhecido por seu excelente olfato.",

@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Tons Primários -->
+    <color name="cor_primaria">#BA634B</color>
+    <color name="cor_primaria_escura">#BA634B</color>
+    <color name="cor_primaria_clara">#BA634B</color>
+
+    <!-- Tons Secundários -->
+    <color name="cor_secundaria">#056C5C</color>
+    <color name="cor_secundaria_variante">#CCCCCC</color>
+
+    <!-- Cores de Fundo e Superfície (Tema Claro) -->
+    <color name="cor_de_fundo_clara">#FFD2C0</color>
+    <color name="cor_superficie_clara">#BA634B</color>
+
+    <!-- Cores de Fundo e Superfície (Tema Escuro) -->
+    <color name="cor_de_fundo_escura">#FFD2C0</color>
+    <color name="cor_superficie_escura">#BA634B</color>
+
+    <!-- Cores de Texto e Ícones -->
+    <color name="cor_texto_escuro">#424241</color> <!-- Para fundos claros -->
+    <color name="cor_texto_claro">#424241</color>  <!-- Para fundos escuros -->
+    <color name="cor_no_primario">#CCCCCC</color> <!-- Texto/Ícone sobre a cor primária -->
+    <color name="cor_no_secundario">#CCCCCC</color> <!-- Texto/Ícone sobre a cor secundária -->
+
+    <!-- Cores de Erro -->
+    <color name="cor_erro_claro">#B3261E</color>
+    <color name="cor_erro_escuro">#F2B8B5</color>
 </resources>

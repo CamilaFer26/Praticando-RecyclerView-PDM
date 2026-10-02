@@ -3,6 +3,25 @@
     <style name="Base.Theme.AppRecyclerView" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Cores da Marca -->
+        <item name="fontFamily">@font/baloo</item>
+        <item name="colorPrimary">@color/cor_primaria</item>
+        <item name="colorPrimaryVariant">@color/cor_primaria_escura</item>
+        <item name="colorOnPrimary">@color/cor_no_primario</item>
+
+        <item name="colorSecondary">@color/cor_secundaria</item>
+        <item name="colorSecondaryVariant">@color/cor_secundaria_variante</item>
+        <item name="colorOnSecondary">@color/cor_no_secundario</item>
+
+        <!-- Fundo e Elementos em Tela (Cards, Menus) -->
+        <item name="android:colorBackground">@color/cor_de_fundo_clara</item>
+        <item name="colorOnBackground">@color/cor_texto_escuro</item>
+        <item name="colorSurface">@color/cor_superficie_clara</item>
+        <item name="colorOnSurface">@color/cor_texto_escuro</item>
+
+        <!-- Erros -->
+        <item name="colorError">@color/cor_erro_claro</item>
+        <item name="colorOnError">@color/cor_no_primario</item>
     </style>
 
     <style name="Theme.AppRecyclerView" parent="Base.Theme.AppRecyclerView" />
