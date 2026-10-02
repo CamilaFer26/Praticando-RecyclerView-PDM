@@ -9,12 +9,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.unir.apprecyclerview.model.Cachorro;
+
 import java.util.ArrayList;
 
 
 public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
-    private ArrayList<Usuario> list;
+    private ArrayList<Cachorro> list;
     private OnItemClickListener listener;
 
     public interface OnItemClickListener {
@@ -22,7 +25,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         void onItemLongClick(int position);
     }
 
-    public Adapter(ArrayList<Usuario> list) {
+    public Adapter(ArrayList<Cachorro> list) {
         this.list = list;
     }
 
@@ -40,8 +43,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.txtNome.setText(list.get(position).getNome());
-        holder.imgAvatar.setImageResource(list.get(position).getFigura());
+        String txt = "";
+        txt = txt.concat(list.get(position).getNome());
+        txt = txt.concat("\n" + list.get(position).getRaca());
+        txt = txt.concat("\n\n" + list.get(position).getDescricao());
+
+        holder.txtNome.setText(txt);
+        Glide.with(holder.itemView.getContext()).load(list.get(position).getImagem()).into(holder.imgAvatar);
     }
 
     @Override

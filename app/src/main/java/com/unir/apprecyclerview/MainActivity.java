@@ -18,6 +18,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.unir.apprecyclerview.model.Cachorro;
+import com.unir.apprecyclerview.model.CachorroData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextInputEditText editText;
     private RecyclerView recyclerView;
-    private ArrayList<Usuario> list;
+    private ArrayList<Cachorro> list;
     private Button button;
 
     @Override
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        list = new ArrayList<Usuario>();
+        list = CachorroData.getCachorros();
         Adapter adapter = new Adapter(list);
         editText = findViewById(R.id.editText);
         recyclerView = findViewById(R.id.recyclerView);
@@ -66,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                list.add(new Usuario(editText.getText().toString(), R.mipmap.ic_launcher_avatar));
-                adapter.notifyDataSetChanged();
-                editText.setText("");
+                //list.add(new Cachorro(editText.getText().toString(), R.mipmap.ic_launcher_avatar));
+                //adapter.notifyDataSetChanged();
+                //editText.setText("");
             }
         });
 
